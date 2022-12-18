@@ -1,0 +1,15 @@
+.cart{
+    background-color: antiquewhite;
+    margin: 2px;
+    padding: 1px;
+    padding-top: 10px;
+    border-radius: 20px;
+}
+.cart img{
+    height: 150px;
+    width: 100px;
+}
+.cart button{
+    width: fit-content;
+
+}

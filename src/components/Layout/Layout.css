@@ -1,0 +1,17 @@
+.layoout{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.sidebar{
+    background-color: rgb(200, 240, 174);
+    text-align: center;
+    margin: 5px;
+}
+.main-section{
+    background-color: rgba(207, 196, 196, 0.8);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    margin: 5px;
+}
+
