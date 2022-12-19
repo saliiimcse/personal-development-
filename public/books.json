@@ -4,41 +4,47 @@
     "name": "Man's Search for Meaning",
     "author": "Viktor E. Frankl",
     "img": "https://cdn.shopify.com/s/files/1/1186/0402/files/9781846042843.jpg?v=1611064859",
-    "quantity": 0
+    "quantity": 0,
+    "time":"30"
   },
   {
     "id": "2",
     "name": "Sapiens",
     "author": "Yuval Noah Harari",
     "img": "https://cdn.shopify.com/s/files/1/1186/0402/files/9780099590088.jpg?v=1611065081",
-    "quantity": 0
+    "quantity": 0,
+    "time":"30"
   },
   {
     "id": "3",
     "name": "The Happiness Advantage",
     "author": "Shawn Achor",
     "img": "https://cdn.shopify.com/s/files/1/1186/0402/files/61_QjODNRjL.jpg?v=1611065182",
-    "quantity": 0
+    "quantity": 0,
+    "time":"30"
   },
   {
     "id": "4",
     "name": "Linchpin",
     "author": "Seth Godin",
     "img": "https://cdn.shopify.com/s/files/1/1186/0402/files/81AYe0WFzOL.jpg?v=1611065211",
-    "quantity": 0
+    "quantity": 0,
+    "time":"30"
   },
   {
     "id": "5",
     "name": "Getting Things Done",
     "author": "David Allen",
     "img": "https://cdn.shopify.com/s/files/1/1186/0402/files/getting-things-done-3.jpg?v=1611065284",
-    "quantity": 0
+    "quantity": 0,
+    "time":"30"
   },
   {
     "id": "6",
     "name": "The Success Principles",
     "author": "Jack Canfield",
     "img": "https://cdn.shopify.com/s/files/1/1186/0402/files/71h3hc2CLtL.jpg?v=1611065427",
-    "quantity": 0
+    "quantity": 0,
+    "time":"90"
   }
 ]
