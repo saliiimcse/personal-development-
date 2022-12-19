@@ -10,7 +10,7 @@ const Book = (props) => {
             <img src={img} alt="Link did't work" />
             <h4>Name:{name}</h4>
             <h5>Author: {author}</h5>
-            <p>Time Require: {time}s</p>
+            <p>Time Require: {time} min</p>
             <button onClick={() => {cart(time)}}>Add to list</button>
         </div>
     );

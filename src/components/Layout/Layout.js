@@ -5,7 +5,8 @@ import Book from '../Book/Book';
 
 const Layout = () => {
     const [book, setBook] = useState([]);
-    const [addCart, setCart] = useState(null);
+    const [addCart, setCart] = useState(0);
+    const [breakTime, setBreakTime] = useState(0);
     useEffect(() => {
           fetch('books.json')
           .then(res => res.json())
@@ -17,6 +18,9 @@ const Layout = () => {
             setCart(addCart + parseInt(book))
         }
     }
+    const showBreakTime = (time) =>{
+        setBreakTime(time);
+    }
     return (
         <div className='layoout'>
             {/* main secton */}
@@ -25,7 +29,7 @@ const Layout = () => {
                     book.map(book => <Book 
                         book={book}
                         cart={handleAddToCart}
-                        
+                        key={book.id}
                         ></Book>) 
                 }
             </div>
@@ -35,11 +39,17 @@ const Layout = () => {
                 <h3>Dhaka</h3>
                 <div>
                     <h2>Area Breaks</h2>
+                    <div className='break-time'>
+                    <button onClick={() => {setBreakTime(10)}}>10</button>
+                    <button onClick={() => {setBreakTime(20)}}>20</button>
+                    <button onClick={() => {setBreakTime(30)}}>30</button>
+                    <button onClick={() => {setBreakTime(40)}}>40</button>
+                    </div>
                 </div>
                 <div>
                     <h2>Book Details</h2>
-                    <p>Reading Time: {addCart} </p>
-                    <p>Break Time</p>
+                    <p>Reading Time: {addCart} min</p>
+                    <p>Break Time: {breakTime} min</p>
                     <button>Activity Complete</button>
                 </div>
             </div>
