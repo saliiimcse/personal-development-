@@ -5,35 +5,22 @@ import Book from '../Book/Book';
 
 const Layout = () => {
     const [book, setBook] = useState([]);
-    const [addCart, setCart] = useState(0);
-    const [breakTime, setBreakTime] = useState(0);
-  
+
     useEffect(() => {
           fetch('books.json')
           .then(res => res.json())
           .then(data => setBook(data));
         },[])
         // console.log(book);
-    const handleAddToCart = (book) =>{
-        if (book) {
-        setCart(addCart + parseInt(book))
-       }
-    }
-    
-    const breakTimeShow = (addTime) =>{
-        setBreakTime(addTime);
-    }
-
     return (
         <div className='layoout'>
             {/* main secton */}
             <div className='main-section'>
                 {
-                    book.map(book => <Book 
-                        book={book}
-                        cart={handleAddToCart}
-                        key={book.id}
-                        ></Book>) 
+                    book.map(book => <Book book={book}></Book>) 
+                }
+                {
+                    //  book.map(book => console.log(book))
                 }
             </div>
            
@@ -51,8 +38,8 @@ const Layout = () => {
                 </div>
                 <div>
                     <h2>Book Details</h2>
-                    <p>Reading Time: {addCart} min</p>
-                    <p>Break Time: {breakTime} min</p>
+                    <p>Reading Time</p>
+                    <p>Break Time</p>
                     <button>Activity Complete</button>
                 </div>
             </div>
