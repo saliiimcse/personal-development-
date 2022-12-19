@@ -3,14 +3,15 @@ import './Book.css'
 
 const Book = (props) => {
     // console.log(props.book.name);
-    
-    const {id, name, author, img} = props.book;
+    const {cart, book} = props;
+    const {id, name, author, img, time} = book;
     return (
         <div className='cart'>
             <img src={img} alt="Link did't work" />
             <h4>Name:{name}</h4>
             <h5>Author: {author}</h5>
-            <button>Add to list</button>
+            <p>Time Require: {time} min</p>
+            <button onClick={() => {cart(time)}}>Add to list</button>
         </div>
     );
 };

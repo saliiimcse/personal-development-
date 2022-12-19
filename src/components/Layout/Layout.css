@@ -14,4 +14,12 @@
     text-align: center;
     margin: 5px;
 }
+.break-time button{
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    background-color: rgb(194, 218, 178);
+}
 
